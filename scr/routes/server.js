@@ -24,6 +24,6 @@ app.get("/", async(req, res) => {
     res.send("API - ON")
 })
 
-app.listen(8080, () => {
-    console.log("localhost:8080");
+app.listen(process.env.PORT, () => {
+    console.log("Serv On");
 });
